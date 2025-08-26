@@ -94,7 +94,7 @@ function TarotGrid() {
                         <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-6 border border-pink-200">
                             <div className="text-center mb-4">
                                 <img
-                                    src={`/src/assets/cards/${selectedCard.image}`}
+                                    src={`/cards/${selectedCard.image}`}  // Cambiado: ahora desde public/cards/
                                     alt={selectedCard.name}
                                     className="w-32 h-48 mx-auto rounded-lg shadow-lg mb-4"
                                 />

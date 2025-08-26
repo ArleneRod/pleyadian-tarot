@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Header from '../components/Header.jsx';
 
 function ContactPage() {
     const [formData, setFormData] = useState({
@@ -27,7 +26,7 @@ function ContactPage() {
             return;
         }
 
-        // Configuración EmailJS con tus datos
+        // Configuración EmailJS con variables de entorno
         const templateParams = {
             from_name: formData.nombre,
             from_email: formData.email,
@@ -38,10 +37,10 @@ function ContactPage() {
         };
 
         emailjs.send(
-            'service_zamcn67',           // Tu Service ID
-            'template_1pleyadian',       // Tu Template ID
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
             templateParams,
-            'OirsX0rUMmKKpJEUi'         // Tu Public Key
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
             .then((response) => {
                 console.log('Email enviado exitosamente:', response);
@@ -67,7 +66,6 @@ function ContactPage() {
             <div className="container mx-auto px-4 max-w-2xl">
 
                 {/* Header */}
-
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">
                         ✨ Contáctanos ✨

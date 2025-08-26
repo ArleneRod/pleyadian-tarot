@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Instagram } from "lucide-react";
-
+import { Instagram, MessageCircle } from "lucide-react";
 function Footer() {
     const navigate = useNavigate();
     const location = useLocation();
@@ -106,6 +105,15 @@ function Footer() {
                         </small>
 
                         <div className="flex gap-3">
+                            <a
+                            href="https://wa.me/51987698897"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-green-600 hover:text-green-800 transition-colors duration-300"
+                            aria-label="WhatsApp"
+                            >
+                            <MessageCircle size={24} />
+                        </a>
                             <a
                                 href="https://www.instagram.com/pleyadian.tarot"
                                 target="_blank"

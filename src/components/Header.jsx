@@ -8,8 +8,9 @@ function Header() {
     const location = useLocation();
 
     const handleSobreMiClick = () => {
+        setOpenNav(false); // Cerrar menú móvil
         if (location.pathname !== "/") {
-            navigate("/#sobre-mi"); // Navega a Home con hash
+            navigate("/#sobre-mi");
         } else {
             const sobreMiSection = document.getElementById("sobre-mi");
             if (sobreMiSection) {
@@ -17,7 +18,9 @@ function Header() {
             }
         }
     };
+
     const handleCartaDelDiaClick = () => {
+        setOpenNav(false); // Cerrar menú móvil
         if (location.pathname !== "/") {
             navigate("/#carta-del-dia");
         } else {
@@ -27,6 +30,12 @@ function Header() {
             }
         }
     };
+
+    const handleInicioClick = () => {
+        setOpenNav(false); // Cerrar menú móvil
+        window.scrollTo(0, 0);
+    };
+
     return (
         <nav className="block w-full max-w-screen-lg px-4 py-2 mx-auto sticky top-3 shadow-lg lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999] rounded-xl bg-black/30 text-white font-mulish">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -39,18 +48,15 @@ function Header() {
                 >
                     <img src={tarotLogo} alt="Tarot Logo" className="w-10 h-10" />
                     <span className="text-xl font-pacifico text-white hover:text-purple-300 transition-all duration-300">
-                    Pleyadian
-                </span>
+                        Pleyadian
+                    </span>
                 </Link>
 
-                {/* Links */}
+                {/* Links Desktop */}
                 <div className="hidden lg:block">
                     <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                         <li className="text-sm hover:text-purple-300 transition">
-                            <Link
-                                to="/"
-                                onClick={() => window.scrollTo(0, 0)}
-                            >
+                            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                                 Inicio
                             </Link>
                         </li>
@@ -82,6 +88,44 @@ function Header() {
                     </svg>
                 </button>
             </div>
+
+            {/* Menú Móvil */}
+            {openNav && (
+                <div className="lg:hidden mt-4 bg-black/40 rounded-lg p-4 backdrop-blur-sm">
+                    <ul className="flex flex-col gap-4">
+                        <li>
+                            <Link
+                                to="/"
+                                className="block text-white hover:text-purple-300 transition-colors text-base font-medium"
+                                onClick={handleInicioClick}
+                            >
+                                Inicio
+                            </Link>
+                        </li>
+                        <li
+                            onClick={handleCartaDelDiaClick}
+                            className="block text-white hover:text-purple-300 transition-colors text-base font-medium cursor-pointer"
+                        >
+                            Carta del día
+                        </li>
+                        <li>
+                            <Link
+                                to="/contacto"
+                                className="block text-white hover:text-purple-300 transition-colors text-base font-medium"
+                                onClick={() => setOpenNav(false)}
+                            >
+                                Contacto
+                            </Link>
+                        </li>
+                        <li
+                            onClick={handleSobreMiClick}
+                            className="block text-white hover:text-purple-300 transition-colors text-base font-medium cursor-pointer"
+                        >
+                            Sobre mí
+                        </li>
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 }
