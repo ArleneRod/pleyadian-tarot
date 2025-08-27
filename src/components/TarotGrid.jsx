@@ -3,29 +3,30 @@ import TarotCard from './TarotCard';
 
 // Datos embebidos directamente
 const predictions = [
-    { "id": 0, "name": "The Fool", "image": "0_TheFool.jpg", "prediction": "Un nuevo comienzo te espera. Mantente abierto a nuevas oportunidades." },
-    { "id": 1, "name": "The Magician", "image": "1_TheMagician.jpg", "prediction": "Tienes todas las herramientas para manifestar tus deseos." },
-    { "id": 2, "name": "The High Priestess", "image": "2_Sacerdotiza.jpg", "prediction": "Una mujer sabia, puedes ser tu o una mujer cercana a ti que te dara buenos consejos. Se recomienda escuchar su intuicion y prestar atencion a sus sueños" },
-    { "id": 3, "name": "The Empress", "image": "3_TheEmpress.jpg", "prediction": "Dia lleno de abundancia, fertilidad , podrias conocer a una mujer importante" },
-    { "id": 4, "name": "The Emperor", "image": "4_TheEmperor.jpg", "prediction": "Podrias lidiar con un hombre altanero y obstinado" },
-    { "id": 5, "name": "The Hierophant", "image": "5_TheHierophant.jpg", "prediction": "Un dia tranquilo, preocupada por el que diran y hacer lo correcto" },
-    { "id": 6, "name": "The Lovers", "image": "6_TheLovers.jpg", "prediction": "Estas pensando en dos personas y no sabes a quien elegir." },
-    { "id": 7, "name": "The Chariot", "image": "7_TheChariot.jpg", "prediction": "Avances, podrias emprender un viaje o ir a algun sitio lejano" },
-    { "id": 8, "name": "Strength", "image": "8_Strength.jpg", "prediction": "Mucha fuerza para realizar tus actividades del dia de hoy, te estas conteniendo en algo?" },
-    { "id": 9, "name": "The Hermit", "image": "9_TheHermit.jpg", "prediction": "Un dia tranquilo, para pensar, esperar algo o alguien?" },
-    { "id": 10, "name": "The Wheel of Fortune", "image": "10_WheelofFortune.jpg", "prediction": "El dia de hoy puede ser muy diferente a la rutina que estas acostumbrada" },
-    { "id": 11, "name": "Justice", "image": "11_Justice.jpg", "prediction": "Hiciste algo bueno ultimamente? Hoy puede ser reconocido lo mismo si hiciste algo malo" },
-    { "id": 12, "name": "The Hanged Man", "image": "12_TheHangedMan.jpg", "prediction": "Un dia aburrido, con proyectos pausados o pequeno desequilibrio mental" },
-    { "id": 13, "name": "The Death", "image": "13_Death.jpg", "prediction": "Cambios? Puede ser que renueves tu closet o que te boten del trabajo" },
-    { "id": 14, "name": "Temperance", "image": "14_Temperance.jpg", "prediction": "Te llegara un whatsapp de quien estas pensando" },
-    { "id": 15, "name": "The Devil", "image": "15_TheDevil.jpg", "prediction": "Buen dia para pensar solo en ti y nadie mas que en ti" },
-    { "id": 16, "name": "The Tower", "image": "16_TheTower.jpg", "prediction": "Discucion incomoda" },
-    { "id": 17, "name": "The Star", "image": "17_TheStar.jpg", "prediction": "Un dia con muchos proyectos y buenas vibras" },
-    { "id": 18, "name": "The Moon", "image": "18_TheMoon.jpg", "prediction": "Alguien te tiene celos " },
-    { "id": 19, "name": "The Sun", "image": "19_TheSun.jpg", "prediction": "Hoy brillas, ponte ese vestido y sal a conquistar el mundo" },
-    { "id": 20, "name": "Judgement", "image": "20_Judgement.jpg", "prediction": "Muchas cosas por hacer, talvez aparezca tu ex para invitarte a comer" },
-    { "id": 21, "name": "The World", "image": "21_TheWorld.jpg", "prediction": "Quieres irte de viaje, hoy es un buen dia , tambien mucho trabajo" }
+    { "id": 0, "name": "The Fool", "image": "0_TheFool.jpg", "prediction": "Hoy se abre un nuevo capítulo para ti. No tengas miedo de dar el primer paso, aunque no sepas cómo terminará. Mantente abierta a las sorpresas del día." },
+    { "id": 1, "name": "The Magician", "image": "1_TheMagician.jpg", "prediction": "Tienes más poder del que crees. Si te enfocas, podrás transformar una idea en algo real. Hoy confía en tus talentos." },
+    { "id": 2, "name": "The High Priestess", "image": "2_Sacerdotiza.jpg", "prediction": "Tu intuición está fuerte. Quizás recibas un consejo valioso de una mujer cercana, o simplemente tu voz interior te guíe. Escúchala con atención." },
+    { "id": 3, "name": "The Empress", "image": "3_TheEmpress.jpg", "prediction": "La energía de la abundancia te rodea. Puede ser un día fértil para tus ideas, proyectos o relaciones. También podrías cruzarte con alguien muy especial." },
+    { "id": 4, "name": "The Emperor", "image": "4_TheEmperor.jpg", "prediction": "Hoy puede aparecer una figura fuerte y dominante en tu camino. Aprende de su seguridad, pero no dejes que su terquedad opaque tu voz." },
+    { "id": 5, "name": "The Hierophant", "image": "5_TheHierophant.jpg", "prediction": "Un día tranquilo, en el que quizá quieras hacer lo correcto o seguir lo establecido. No te preocupes tanto por el qué dirán, sé fiel a ti misma." },
+    { "id": 6, "name": "The Lovers", "image": "6_TheLovers.jpg", "prediction": "Hay decisiones del corazón que te rondan la cabeza. Tal vez pienses en dos personas o en dos caminos distintos. Escucha lo que realmente sientes." },
+    { "id": 7, "name": "The Chariot", "image": "7_TheChariot.jpg", "prediction": "La vida te impulsa hacia adelante. Puede ser un viaje, un traslado o simplemente un gran avance personal. Aprovecha esa energía de movimiento." },
+    { "id": 8, "name": "Strength", "image": "8_Strength.jpg", "prediction": "Hoy tienes la fuerza para enfrentar lo que venga. Tal vez estés conteniendo emociones o situaciones… recuerda que tu calma es tu poder." },
+    { "id": 9, "name": "The Hermit", "image": "9_TheHermit.jpg", "prediction": "Un día más introspectivo. Puede que prefieras estar tranquila, reflexionando o esperando algo importante. No tengas miedo al silencio, trae claridad." },
+    { "id": 10, "name": "The Wheel of Fortune", "image": "10_WheelofFortune.jpg", "prediction": "La rutina se rompe y algo inesperado aparece. Prepárate para giros en el día, pueden ser pequeños o grandes, pero todos traen aprendizajes." },
+    { "id": 11, "name": "Justice", "image": "11_Justice.jpg", "prediction": "Hoy podrías ver las consecuencias de tus actos recientes. Si sembraste algo bueno, la recompensa llega; si no, es un buen momento para reflexionar." },
+    { "id": 12, "name": "The Hanged Man", "image": "12_TheHangedMan.jpg", "prediction": "Un día que puede sentirse lento o pausado. Si algo se retrasa, tómalo como una oportunidad para ver las cosas desde otro ángulo." },
+    { "id": 13, "name": "The Death", "image": "13_Death.jpg", "prediction": "Se acerca un cambio necesario. Puede ser algo pequeño, como renovar tu estilo, o algo más grande que cierre una etapa. Dale la bienvenida a lo nuevo." },
+    { "id": 14, "name": "Temperance", "image": "14_Temperance.jpg", "prediction": "La armonía toca tu puerta. Quizás recibas un mensaje que estabas esperando o una señal que te dé paz. Fluye sin forzar nada." },
+    { "id": 15, "name": "The Devil", "image": "15_TheDevil.jpg", "prediction": "Un día para enfocarte en ti misma sin culpa. Date un gusto, piensa en lo que quieres y no en lo que esperan los demás." },
+    { "id": 16, "name": "The Tower", "image": "16_TheTower.jpg", "prediction": "Podría surgir una conversación fuerte o un momento incómodo. Aunque no lo parezca, a veces lo que se derrumba abre espacio a algo mejor." },
+    { "id": 17, "name": "The Star", "image": "17_TheStar.jpg", "prediction": "Hoy brillas con esperanza y creatividad. Es un buen momento para soñar, planear y confiar en que lo que deseas se acerca." },
+    { "id": 18, "name": "The Moon", "image": "18_TheMoon.jpg", "prediction": "No todo es lo que parece. Puede que alguien sienta celos o haya malentendidos. Confía más en lo que sientes que en lo que escuchas." },
+    { "id": 19, "name": "The Sun", "image": "19_TheSun.jpg", "prediction": "Brillas con energía y alegría. Ponte guapa, sonríe y disfruta del día. Hoy tienes el poder de contagiar optimismo a los demás." },
+    { "id": 20, "name": "Judgement", "image": "20_Judgement.jpg", "prediction": "Varias cosas reclaman tu atención. Puede que reaparezca alguien de tu pasado, incluso un ex. Tómalo como una oportunidad para ver cuánto has cambiado." },
+    { "id": 21, "name": "The World", "image": "21_TheWorld.jpg", "prediction": "Sientes ganas de viajar o de cerrar un ciclo. Si no lo haces hoy, muy pronto llegará esa oportunidad de moverte y celebrar tus logros." }
 ];
+
 
 function TarotGrid() {
     const [shuffledCards, setShuffledCards] = useState([]);
