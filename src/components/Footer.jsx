@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Instagram, MessageCircle } from "lucide-react";
 function Footer() {
     const navigate = useNavigate();
     const location = useLocation();
@@ -74,6 +73,14 @@ function Footer() {
                                 >
                                     ✨ About Me
                                 </li>
+                                <li>
+                                    <Link
+                                        to="/faq"
+                                        className="text-black hover:text-pink-600 transition-colors duration-300 font-medium"
+                                    >
+                                        ❓ FAQ
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                         <div>
@@ -103,26 +110,6 @@ function Footer() {
                         <small className="text-gray-600 text-center text-sm">
                             © 2025 Pleyadian Tarot. Conectando almas con el universo ✨
                         </small>
-
-                        <div className="flex gap-3">
-                            <a
-                            href="https://wa.me/51987698897"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-green-600 hover:text-green-800 transition-colors duration-300"
-                            aria-label="WhatsApp"
-                            >
-                            <MessageCircle size={24} />
-                        </a>
-                            <a
-                                href="https://www.instagram.com/pleyadian.tarot"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
-                            >
-                                <Instagram size={24} />
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
