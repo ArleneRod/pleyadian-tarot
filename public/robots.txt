@@ -1,0 +1,22 @@
+# robots.txt para Pleyadian Tarot
+# Optimizado para SEO en Perú
+
+User-agent: *
+Allow: /
+Allow: /contacto
+Allow: /cards/
+
+# Evitar crawling de archivos innecesarios
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://pleyadian-tarot.vercel.app/sitemap.xml
+
+# Crawl-delay para bots más lentos
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 1
