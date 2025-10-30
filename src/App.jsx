@@ -6,7 +6,7 @@ import DataContainer_2 from "./components/DataContainer_2.jsx";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { HelmetProvider } from 'react-helmet-async';
-import { FloatingButtons } from './components/FloatingButtons';
+import { FloatingButtons } from './components/Floatingbuttons';
 
 function App() {
     return (
