@@ -24,12 +24,13 @@ function App() {
                 </Routes>
 
                 <Footer />
-            </div>
-        </Router>
+
                 <FloatingButtons
                     whatsappNumber="51987698897"
                     instagramHandle="pleyadian.tarot"
                 />
+            </div>
+        </Router>
             </div>
         </HelmetProvider>
     );
