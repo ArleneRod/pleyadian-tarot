@@ -12,11 +12,11 @@ export default withMT({
                 mulish: ['"Mulish"', 'sans-serif'],
                 pacifico: ['"Pacifico"', 'cursive'],
                 cinzel: ['"Cinzel Decorative"', 'cursive'],
-                    animation: {
-                        'spin-slow': 'spin 6s linear infinite',
-                        'bounce-slow': 'bounce 3s infinite',
-                }
             },
+            animation: {
+                'spin-slow': 'spin 6s linear infinite',
+                'bounce-slow': 'bounce 3s infinite',
+            }
         },
     },
     plugins: [],
