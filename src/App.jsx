@@ -7,6 +7,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { HelmetProvider } from 'react-helmet-async';
 import { FloatingButtons } from './components/Floatingbuttons';
+import Blog from './components/Blog';
+import BlogPost from './components/Blogpost';
 
 function App() {
     return (
@@ -21,6 +23,8 @@ function App() {
                     <Route path="/contacto" element={<ContactPage />} />
                     <Route path="/faq" element={<FAQPage />} />
                     <Route path="/sobre-mi" element={<DataContainer_2 />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:slug" element={<BlogPost />} />
                 </Routes>
 
                 <Footer />

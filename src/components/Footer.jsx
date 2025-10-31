@@ -99,6 +99,14 @@ function Footer() {
                                         📞 Contacto
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        to="/blog"
+                                        className="text-black hover:text-pink-600 transition-colors duration-300 font-medium"
+                                    >
+                                        📝 Blog
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

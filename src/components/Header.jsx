@@ -61,7 +61,7 @@ function Header() {
                             <Link
                                 to="/"
                                 onClick={() => window.scrollTo(0, 0)}
-                                className="px-5 py-2 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
                             >
                                 Inicio
                             </Link>
@@ -69,7 +69,7 @@ function Header() {
                         <li>
                             <button
                                 onClick={handleCartaDelDiaClick}
-                                className="px-5 py-2 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40"
                             >
                                 Carta del día
                             </button>
@@ -77,7 +77,7 @@ function Header() {
                         <li>
                             <Link
                                 to="/contacto"
-                                className="px-5 py-2 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
                             >
                                 Contacto
                             </Link>
@@ -85,7 +85,7 @@ function Header() {
                         <li>
                             <Link
                                 to="/faq"
-                                className="px-5 py-2 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
                             >
                                 FAQ
                             </Link>
@@ -93,10 +93,18 @@ function Header() {
                         <li>
                             <button
                                 onClick={handleSobreMiClick}
-                                className="px-5 py-2 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40"
                             >
                                 Sobre mí
                             </button>
+                        </li>
+                        <li>
+                            <Link
+                                to="/blog"
+                                className="px-5 py-2 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 hover:scale-105 transform border-2 border-white/20 hover:border-white/40 inline-block"
+                            >
+                                Blog
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -119,7 +127,7 @@ function Header() {
                         <li>
                             <Link
                                 to="/"
-                                className="block text-center px-4 py-2.5 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                className="block text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
                                 onClick={handleInicioClick}
                             >
                                 Inicio
@@ -128,7 +136,7 @@ function Header() {
                         <li>
                             <button
                                 onClick={handleCartaDelDiaClick}
-                                className="w-full text-center px-4 py-2.5 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                className="w-full text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
                             >
                                 Carta del día
                             </button>
@@ -136,7 +144,7 @@ function Header() {
                         <li>
                             <Link
                                 to="/contacto"
-                                className="block text-center px-4 py-2.5 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                className="block text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
                                 onClick={() => setOpenNav(false)}
                             >
                                 Contacto
@@ -145,7 +153,7 @@ function Header() {
                         <li>
                             <Link
                                 to="/faq"
-                                className="block text-center px-4 py-2.5 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                className="block text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
                                 onClick={() => setOpenNav(false)}
                             >
                                 FAQ
@@ -154,10 +162,19 @@ function Header() {
                         <li>
                             <button
                                 onClick={handleSobreMiClick}
-                                className="w-full text-center px-4 py-2.5 text-lg font-bold bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                className="w-full text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
                             >
                                 Sobre mí
                             </button>
+                        </li>
+                        <li>
+                            <Link
+                                to="/blog"
+                                className="block text-center px-4 py-2.5 text-lg font-bold text-white bg-white/10 hover:bg-white/25 rounded-full transition-all duration-300 border-2 border-white/20"
+                                onClick={() => setOpenNav(false)}
+                            >
+                                Blog
+                            </Link>
                         </li>
                     </ul>
                 </div>
