@@ -1,0 +1,8 @@
+{
+  "git": {
+    "branchPrefix": "feature/",
+    "commitMessageSuffix": "",
+    "autoCommit": false,
+    "autoPush": false
+  }
+}
